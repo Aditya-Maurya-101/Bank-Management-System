@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>🏦 Bank Management System</h2>
+
+    <form method="post" action="bank1.php">
+
+        <label>Account Holder Name</label>
+        <input type="text" name="name" required>
+
+        <label>Select Operation</label>
+
+        <div class="radio-group">
+            <input type="radio" name="operation" value="Deposit"
+                   onclick="showAmount()" required> Deposit
+
+            <input type="radio" name="operation" value="Withdraw"
+                   onclick="showAmount()"> Withdraw
+
+            <input type="radio" name="operation" value="Check Balance"
+                   onclick="hideAmount()"> Check Balance
+        </div>
+
+        <div id="amountBox">
+            <label>Amount</label>
+            <input type="number" name="amount">
+        </div>
+
+        <input type="submit" name="submit" value="Submit">
+
+    </form>
+
+</div>
+
+<script>
+
+function showAmount()
+{
+    document.getElementById("amountBox").style.display = "block";
+}
+
+function hideAmount()
+{
+    document.getElementById("amountBox").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>

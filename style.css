@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+}
+
+.container{
+    width:100%;
+    max-width:450px;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+h2{
+    text-align:center;
+    color:#1e3c72;
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-top:12px;
+    margin-bottom:5px;
+    font-weight:bold;
+    color:#333;
+}
+
+input[type="text"],
+input[type="number"]{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+.radio-group{
+    margin-top:10px;
+    margin-bottom:15px;
+}
+
+.radio-group label{
+    display:inline;
+    margin-left:5px;
+    font-weight:normal;
+}
+
+input[type="radio"]{
+    margin-top:10px;
+}
+
+input[type="submit"]{
+    width:100%;
+    padding:12px;
+    margin-top:20px;
+    border:none;
+    border-radius:6px;
+    background:#1e3c72;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+input[type="submit"]:hover{
+    background:#2a5298;
+}
+
+h3{
+    margin-top:20px;
+    color:green;
+    text-align:center;
+}
+
+p{
+    margin-top:10px;
+    font-size:18px;
+    text-align:center;
+}
+
+#amountBox{
+    display:none;
+}
+
+/* Mobile Responsive */
+@media (max-width:480px){
+
+    body{
+        padding:15px;
+    }
+
+    .container{
+        padding:20px;
+        border-radius:12px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="submit"]{
+        font-size:16px;
+    }
+
+    p{
+        font-size:16px;
+    }
+}
+.detail-box{
+    margin-top:12px;
+    padding:12px 15px;
+    background:#f5f7fa;
+    border-radius:6px;
+    border-left:4px solid #1e3c72;
+    font-size:16px;
+}
+
+.balance-box{
+    margin-top:15px;
+    padding:15px;
+    background:#e8f5e9;
+    color:green;
+    text-align:center;
+    border-radius:6px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.error-box{
+    margin-top:15px;
+    padding:15px;
+    background:#ffebee;
+    color:red;
+    text-align:center;
+    border-radius:6px;
+    font-size:18px;
+    font-weight:bold;
+}
